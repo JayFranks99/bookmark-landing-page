@@ -29,6 +29,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-grey: #9194a1;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -3818,6 +3819,41 @@ textarea.form-control-lg {
   border-color: #212529;
 }
 
+.btn-grey {
+  color: #000;
+  background-color: #9194a1;
+  border-color: #9194a1;
+}
+
+.btn-grey:hover {
+  color: #000;
+  background-color: #a2a4af;
+  border-color: #9c9faa;
+}
+
+.btn-check:focus + .btn-grey, .btn-grey:focus {
+  color: #000;
+  background-color: #a2a4af;
+  border-color: #9c9faa;
+  box-shadow: 0 0 0 .25rem #7b7e8980;
+}
+
+.btn-check:checked + .btn-grey, .btn-check:active + .btn-grey, .btn-grey:active, .btn-grey.active, .show > .btn-grey.dropdown-toggle {
+  color: #000;
+  background-color: #a7a9b4;
+  border-color: #9c9faa;
+}
+
+.btn-check:checked + .btn-grey:focus, .btn-check:active + .btn-grey:focus, .btn-grey:active:focus, .btn-grey.active:focus, .show > .btn-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .25rem #7b7e8980;
+}
+
+.btn-grey:disabled, .btn-grey.disabled {
+  color: #000;
+  background-color: #9194a1;
+  border-color: #9194a1;
+}
+
 .btn-outline-primary {
   color: #5368df;
   border-color: #5368df;
@@ -4055,6 +4091,36 @@ textarea.form-control-lg {
 
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
+  background-color: #0000;
+}
+
+.btn-outline-grey {
+  color: #9194a1;
+  border-color: #9194a1;
+}
+
+.btn-outline-grey:hover {
+  color: #000;
+  background-color: #9194a1;
+  border-color: #9194a1;
+}
+
+.btn-check:focus + .btn-outline-grey, .btn-outline-grey:focus {
+  box-shadow: 0 0 0 .25rem #9194a180;
+}
+
+.btn-check:checked + .btn-outline-grey, .btn-check:active + .btn-outline-grey, .btn-outline-grey:active, .btn-outline-grey.active, .btn-outline-grey.dropdown-toggle.show {
+  color: #000;
+  background-color: #9194a1;
+  border-color: #9194a1;
+}
+
+.btn-check:checked + .btn-outline-grey:focus, .btn-check:active + .btn-outline-grey:focus, .btn-outline-grey:active:focus, .btn-outline-grey.active:focus, .btn-outline-grey.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 .25rem #9194a180;
+}
+
+.btn-outline-grey:disabled, .btn-outline-grey.disabled {
+  color: #9194a1;
   background-color: #0000;
 }
 
@@ -5709,6 +5775,16 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+.alert-grey {
+  color: #575961;
+  background-color: #e9eaec;
+  border-color: #dedfe3;
+}
+
+.alert-grey .alert-link {
+  color: #46474e;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6151,6 +6227,22 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-grey {
+  color: #575961;
+  background-color: #e9eaec;
+}
+
+.list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+  color: #575961;
+  background-color: #d2d3d4;
+}
+
+.list-group-item-grey.list-group-item-action.active {
+  color: #fff;
+  background-color: #575961;
+  border-color: #575961;
 }
 
 .btn-close {
@@ -7288,6 +7380,14 @@ textarea.form-control-lg {
   color: #1a1e21;
 }
 
+.link-grey {
+  color: #9194a1;
+}
+
+.link-grey:hover, .link-grey:focus {
+  color: #a7a9b4;
+}
+
 .ratio {
   width: 100%;
   position: relative;
@@ -7711,6 +7811,10 @@ textarea.form-control-lg {
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-grey {
+  border-color: #9194a1 !important;
 }
 
 .border-white {
@@ -12100,6 +12204,47 @@ p, a, .btn {
 
 .navbar-nav .nav-link, .navbar-nav button {
   text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .bg-effects {
+  z-index: -1;
+  width: 40%;
+  height: 50%;
+  bottom: 0;
+  left: unset;
+  background-color: #5368df;
+  border-radius: 0% 0% 0% 45%;
+  position: absolute;
+  right: 0;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+  height: 0;
+}
+
+.fade {
+  transition: height .15s linear;
+}
+
+.features {
+  position: relative;
+}
+
+.features .bg-effects {
+  z-index: -1;
+  width: 40%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: unset;
+  background-color: #5368df;
+  border-radius: 0% 0% 45%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */

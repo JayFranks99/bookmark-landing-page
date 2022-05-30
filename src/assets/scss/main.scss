@@ -5,6 +5,7 @@
 $custom-colors: (
   "primary": hsl(231, 69%, 60%),
   "secondary": hsl(0, 94%, 66%),
+  "grey": hsl(229, 8%, 60%),
 );
 
 // Importing bootstrap elements
@@ -17,6 +18,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Improting bootstrap scss
 @import "~bootstrap/scss/bootstrap";
+
+@mixin bg-effects($position-left, $position-right, $border-radius) {
+  z-index: -1;
+  width: 40%;
+  height: 50%;
+  background-color: $primary-blue-colour;
+  border-radius: $border-radius;
+  position: absolute;
+  bottom: 0;
+  left: $position-left;
+  right: $position-right;
+}
 
 body {
   font-family: "Rubik", sans-serif;
@@ -41,5 +54,34 @@ a,
   }
   button {
     text-transform: uppercase;
+  }
+}
+
+.hero {
+  position: relative;
+  .bg-effects {
+    @include bg-effects(unset, 0, 0% 0% 0% 45%);
+  }
+}
+
+.hero-img {
+  img {
+  }
+}
+
+// Tabbing styles
+.fade:not(.show) {
+  opacity: 0;
+  height: 0;
+}
+.fade {
+  transition: opacity 0.15s linear;
+  transition: height 0.15s linear;
+}
+
+.features {
+  position: relative;
+  .bg-effects {
+    @include bg-effects(0, unset, 0% 0% 45% 0%);
   }
 }

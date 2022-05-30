@@ -1,0 +1,45 @@
+// Improting files
+@import "./abstracts/variables";
+
+// Create your own map
+$custom-colors: (
+  "primary": hsl(231, 69%, 60%),
+  "secondary": hsl(0, 94%, 66%),
+);
+
+// Importing bootstrap elements
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Improting bootstrap scss
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.btn-secondary {
+  color: white;
+}
+
+p,
+a,
+.btn {
+  font-size: 14px;
+}
+
+.navbar-nav {
+  .nav-item {
+    padding: 0 16px;
+  }
+  .nav-link {
+    text-transform: uppercase;
+  }
+  button {
+    text-transform: uppercase;
+  }
+}

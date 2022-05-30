@@ -1,0 +1,12 @@
+// Changing bootstrap grid columns var from 12 to 24 for 8 point grid system
+$grid-columns: 24 !default;
+
+// Colours
+$primary-blue-colour: hsl(231, 69%, 60%);
+$secondary-red-colour: hsl(0, 94%, 66%);
+$grey-colour: hsl(229, 8%, 60%);
+$dark-blue-colour: hsl(229, 31%, 21%);
+
+// Btn customsiation
+$btn-padding-y: 5px;
+$btn-padding-x: 25px;

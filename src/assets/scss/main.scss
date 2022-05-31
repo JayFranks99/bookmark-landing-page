@@ -105,3 +105,21 @@ a,
     background-color: unset;
   }
 }
+
+.cta-bottom {
+  background-color: $primary-blue-colour;
+}
+
+.footer {
+  background-color: $dark-blue-colour;
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

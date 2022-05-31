@@ -12279,4 +12279,22 @@ p, a, .btn {
   background-color: unset;
 }
 
+.cta-bottom {
+  background-color: #5368df;
+}
+
+.footer {
+  background-color: #252b46;
+}
+
+.footer a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=index.4717fcfd.css.map */

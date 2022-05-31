@@ -52,10 +52,10 @@
   </div>
 </nav>
 
-<section class="hero py-2">
+<section class="hero text-center text-lg-start py-2">
   <div class="container py-5">
     <div class="row align-items-center">
-      <div class="col-lg-10">
+      <div class="col-lg-10 order-2 order-lg-1">
         <h1 class="text-capitalize">A simple bookmark <br> manager</h1>
         <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
           load instantly. Try it for free.</p>
@@ -66,23 +66,24 @@
       </div>
 
 
-      <div class="hero-img col-lg-14 text-end">
+      <div class="hero-img col-lg-14 text-end order-1 order-lg-2">
         <img class="img-fluid" src="/src/assets/images/illustration-hero.svg">
+        <div class="d-flex d-lg-none bg-effects"></div>
       </div>
 
-      <div class="bg-effects"></div>
+      <div class="d-none d-lg-block bg-effects"></div>
 
 </section>
 
 <section class="features py-2">
 
-  <div class="bg-effects"></div>
+  <div class="d-none d-lg-block bg-effects"></div>
 
   <div class="container py-5">
 
     <div class="row text-center justify-content-center">
       <h2>Features</h2>
-      <p class="py-3 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam delectus, quod
+      <p class="py-3 w-lg-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam delectus, quod
         repellendus,
         eum
         voluptatem vero ad, veritatis nisi ratione molestiae optio velit fugiat quos architecto! Blanditiis accusamus
@@ -90,7 +91,9 @@
     </div>
     <div class="row">
       <div class="col-24">
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <!-- Classes added to make mobiel responsive -->
+        <ul class="nav nav-tabs justify-content-center flex-column align-items-center flex-lg-row" id="myTab"
+          role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
               role="tab" aria-controls="home" aria-selected="true">Simple bookmarking</button>
@@ -104,11 +107,11 @@
               role="tab" aria-controls="contact" aria-selected="false">Easy sharing</button>
           </li>
         </ul>
-        <div class="tab-content d-flex align-items-center py-5" id="myTabContent">
-          <div class="col-12">
+        <div class="tab-content d-lg-flex align-items-center py-5" id="myTabContent">
+          <div class="col-lg-12 my-5 my-lg-0 position-relative">
             <img class="img-fluid" src="/src/assets/images/illustration-features-tab-1.svg" alt="">
           </div>
-          <div class="col-12">
+          <div class="col-lg-12">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <h3>Bookmark in one click</h3>
               <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat blanditiis incidunt
@@ -142,50 +145,49 @@
 </section>
 
 
-<section class="download py-5">
+<section class="download-section py-5">
   <div class="container py-5">
     <div class="row text-center justify-content-center">
       <h2>Download the extension</h2>
-      <p class="py-3 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam delectus, quod
+      <p class="py-3 w-lg-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam delectus, quod
         repellendus, eum! Lorem ipsum dolor</p>
     </div>
-    <div class="row">
-      <div class="col-8">
-        <div class="card py-5 text-center">
-          <img class="img-fluid" src="/src/assets/images/logo-chrome.svg" style="width: 75px; margin: 0 auto;"
-            class="card-img-top" alt="...">
+    <div class="row g-4 py-3 py-lg-0">
+      <div class="col-lg-8 my-4">
+        <div class="card py-5 text-center shadow-lg">
+          <img class="img-fluid card-img-top" src="/src/assets/images/logo-chrome.svg" width="75" height="75" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Add to chrome</h5>
+            <p class="card-text">Minimum version 62</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary mt-3">Add & install extension</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-8">
-        <div class="card py-5 text-center">
-          <img class="img-fluid" src="/src/assets/images/logo-firefox.svg" style="width: 75px; margin: 0 auto;"
-            class="card-img-top" alt="...">
+      <div class="col-lg-8 my-4">
+        <div class="card mt-lg-3 py-5 text-center shadow-lg">
+          <img class="img-fluid card-img-top" src="/src/assets/images/logo-firefox.svg" width="75px" height="75px"
+            alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Add to Firefox</h5>
+            <p class="card-text">Minimum version 55</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary mt-3">Add & install extension</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-8">
-        <div class="card py-5 text-center">
-          <img class="img-fluid" src="/src/assets/images/logo-opera.svg" style="width: 75px; margin: 0 auto;"
-            class="card-img-top" alt="...">
+      <div class="col-lg-8 my-4">
+        <div class="card mt-lg-5 py-5 text-center shadow-lg">
+          <img class="img-fluid card-img-top" src="/src/assets/images/logo-opera.svg" width="75px" height="75px"
+            alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Add to opera</h5>
+            <p class="card-text">Minimum version 46</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary mt-3">Add & install extension</a>
+            </div>
           </div>
         </div>
       </div>

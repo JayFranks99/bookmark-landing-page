@@ -12222,6 +12222,17 @@ p, a, .btn {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .hero .bg-effects {
+    width: 65%;
+    height: 75%;
+  }
+}
+
+.hero-img {
+  position: relative;
+}
+
 .fade:not(.show) {
   opacity: 0;
   height: 0;
@@ -12245,6 +12256,27 @@ p, a, .btn {
   background-color: #5368df;
   border-radius: 0% 0% 45%;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .features .bg-effects {
+    width: 65%;
+    height: 75%;
+  }
+}
+
+.download-section img {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.download-section .card {
+  border-radius: .5em;
+}
+
+.download-section .card .card-footer {
+  background-color: unset;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */

@@ -29,6 +29,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   bottom: 0;
   left: $position-left;
   right: $position-right;
+
+  @media (max-width: 768px) {
+    width: 65%;
+    height: 75%;
+  }
 }
 
 body {
@@ -65,6 +70,7 @@ a,
 }
 
 .hero-img {
+  position: relative;
   img {
   }
 }
@@ -83,5 +89,19 @@ a,
   position: relative;
   .bg-effects {
     @include bg-effects(0, unset, 0% 0% 45% 0%);
+  }
+}
+
+.download-section img {
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+.download-section .card {
+  border-radius: 0.5em;
+
+  .card-footer {
+    background-color: unset;
   }
 }
